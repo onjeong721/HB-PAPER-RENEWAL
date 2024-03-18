@@ -1,0 +1,101 @@
+section#news {
+  padding: 50px 0;
+}
+section#news .wrap {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto auto;
+}
+section#news .wrap .news-cat {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+section#news .wrap .news-cat h3 { 
+}
+section#news .wrap .news-cat h4{
+  margin-top: -40px;
+}
+section#news .wrap .news-cat p { 
+  text-align: end;
+}
+section#news .wrap .news-cat a { 
+
+}
+section#news .wrap .news-cat a::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/plus.png);
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  vertical-align: -3px;
+  margin-left: 10px;
+}
+section#news .wrap ul {  
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 50px;
+  border-bottom: 2px solid #ccc;
+}
+section#news .wrap ul li { 
+  padding: 30px 0;
+}
+section#news .wrap ul li:nth-child(1){
+  
+  grid-column: 1/ span 3;
+  grid-row: 1;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+section#news .wrap ul li:nth-child(2){
+  grid-column: 1;
+  grid-row: 2;
+}
+section#news .wrap ul li:nth-child(3){
+  grid-column: 2;
+  grid-row: 2;
+}
+section#news .wrap ul li:nth-child(4){
+  grid-column: 3;
+  grid-row: 2;
+}
+section#news .wrap ul li a {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+section#news .wrap ul li a::before{
+  content: "";
+  background-image: url(../img/news_01.jpg);
+  height: 200px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  width: 100%;
+}
+section#news .wrap ul li:hover a::before{
+  opacity: 1;
+}
+section#news .wrap ul li:nth-child(2) a::before{
+  background-image: url(../img/news_02.jpg);
+}
+section#news .wrap ul li:nth-child(3) a::before{
+  background-image: url(../img/news_03.jpg);
+}
+section#news .wrap ul li:nth-child(4) a::before{
+  background-image: url(../img/news_04.jpg);
+}
+section#news .wrap ul li a time {
+  font-size: 13px;
+  color: #999;
+}

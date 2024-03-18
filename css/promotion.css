@@ -1,0 +1,128 @@
+section#promotion {
+padding: 50px 0;
+}
+section#promotion .wrap .text::before{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3B9447;
+  opacity: 0.3;
+  position: absolute;
+  left: 10%;
+  top: 0;
+  animation-name: top;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section#promotion .wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+section#promotion .wrap .text::after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #3B9447;
+  opacity: 0.3;
+  animation-name: left;
+  animation-duration: 2s;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+section#promotion .wrap .text{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+}
+section#promotion .wrap .text h3 {
+  
+}
+section#promotion .wrap .text h4 {  
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+  padding: 30px 0;
+  margin-top: -10px;
+}
+section#promotion .wrap .text p {
+  text-align: initial;
+  line-height: 1.5;
+  font-size: 15px;
+  animation-name: slide-up2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+  padding: 0 35px 0 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+@keyframes slide-up2{
+  0%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(50%);
+  }
+}
+section#promotion .wrap iframe{
+  
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+
+/* animation */
+@keyframes top{
+  0%{
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  100%{
+   transform: translate(23px, 80px);   
+   opacity: 0.3;
+  }
+}
+@keyframes left{
+  0%{
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-50px, -30px); 
+    opacity: 0.3;
+  }
+}
+@keyframes top-m{
+  0%{
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  100%{
+   transform: translate(75px, 85px);   
+   opacity: 0.3;
+  }
+}
+@keyframes left-m{
+  0%{
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(-5px, -95px); 
+    opacity: 0.3;
+  }
+}

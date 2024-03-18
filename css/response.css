@@ -1,0 +1,197 @@
+@media screen and (max-width:980px){
+  .wrap{
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  .h1{
+    font-size: calc(28px * 0.8);
+  }
+  .h4{
+  font-size: calc(25px * 0.7);
+  }
+/* header  */
+  header .wrap ul.gnb{
+    display: none;
+  }
+  header .wrap span.lang{
+    display: none;
+  }
+  header .wrap >a{
+    display: flex;
+  }
+/*  title  */
+  #title .wrap video{
+    object-fit: initial;
+  }
+  section#promotion .wrap .text::after{
+    animation-name: left-m;
+  }
+  section#promotion .wrap .text::before{
+    animation-name: top-m;
+  }
+  #title .wrap ul li{
+    font-size: calc(80px * 0.8);
+  }
+  #title .wrap ul li p{
+    font-size: calc(30px * 0.8);
+  }
+/*  promption  */
+  section#promotion .wrap{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  }
+  section#promotion .wrap .text{
+    align-items: center;
+    order: 2;
+    padding-bottom: 25px;
+  }
+  section#promotion .wrap .text p{
+    /*! width: 100%; */
+    padding: 0;
+  }
+  section#promotion .wrap iframe{
+    width: calc(100vw - 20px);
+    height: calc(36.33vw - 20px);
+  }
+/*  business  */
+  section#business .wrap{
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  section#business .wrap .cat{
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+  section#business .wrap .item li a{
+    padding: 0;
+    font-size: calc(20px * 0.8);
+  }
+  section#business .wrap .item li a::before{
+  width: calc((100vw / 3) - 20px);
+  height: calc(50vw - 20px);
+  }
+  section#business .wrap .item{
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  width: calc(100vw - 20px);
+  overflow: hidden;
+  }
+  section#business .wrap .cat p{
+    text-align: start;
+    padding-bottom: 30px;
+  }
+  section#business .wrap .cat > a{
+    position: absolute;
+    bottom: -10%;
+  }
+/*  product  */
+  section#products .wrap{
+    position: relative;
+  }
+  section#products .wrap .column ul li:first-child{
+    padding: 0 30px;
+  }
+  section#products .wrap .column > a{
+    position: absolute;
+    bottom: -10%;
+  }
+  section#products .wrap .column{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  section#products .wrap .pro-list{
+    grid-row: 2;
+    grid-column: 1 / span 3;
+  }
+  section#products .wrap .pro-list ul li a img{
+    width: 170px;
+    height: 250px;
+  }
+  section#products .wrap .column ul li a{
+    font-size: calc(17px * 0.8);
+  }
+/* news   */
+  section#news .wrap{
+    gap: 10px;
+    position: relative;
+  }
+  section#news .wrap .news-cat{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  section#news .wrap .news-cat a{
+    position: absolute;
+    bottom: -10%;
+  }
+  section#news .wrap ul li:first-child a{
+    padding-top: 10px;
+  }
+  section#news .wrap ul li:nth-child(1){
+    grid-row: 1;
+    border-bottom: none;
+    border-top: 1px solid #ccc;
+  }
+  section#news .wrap ul li:nth-child(2){
+    grid-row: 2;
+    grid-column: 1 / span 3;
+  }
+    section#news .wrap ul li:nth-child(3){
+    grid-row: 3;
+    grid-column: 1 / span 3;
+  }
+    section#news .wrap ul li:nth-child(4){
+    grid-row: 4;
+    grid-column: 1 / span 3;
+    border-bottom: 1px solid #ccc;
+  }
+  section#news .wrap ul{
+    row-gap: 0;
+    width: calc(100vw - 20px);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-bottom: none;
+  }
+  section#news .wrap ul li{
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  section#news .wrap ul li a::before{
+    display: none;
+  }
+  section#news .wrap ul li:nth-child(1){
+    padding: 0;
+  }
+/* 푸터  */
+  footer .wrap{
+    padding: 10px 10px; 
+    column-gap: 0;
+  }
+  footer .wrap .fnb{
+    grid-row: 2;
+  }
+  footer .wrap .pnb{
+    display: none;
+  }
+  footer .wrap .fnb span a strong{
+    font-size: calc(20px * 0.8);
+  }
+  footer .wrap address{
+    grid-row: 4;
+    grid-column: 1;
+    font-size: calc(15px * 0.8);
+  }
+  footer .wrap p{
+    grid-row: 5;
+    grid-column: 1;
+    font-size: calc(15px * 0.8);
+  }
+  footer .wrap select{
+    justify-self: end;
+  }
+} 

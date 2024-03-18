@@ -1,0 +1,95 @@
+footer {
+  
+}
+footer .wrap {
+  display: grid;
+  position: relative;
+  padding-bottom: 50px;
+  max-width: 100%;
+  padding: 0 calc((100% - 1520px) / 2);
+  background-color: #B6D98A;
+  flex-direction: column;
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 20px;
+}
+footer .wrap h1 {
+  
+}
+footer .wrap .fnb {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  grid-column: 1;
+  grid-row: 2 / span 7;
+}
+footer .wrap .fnb span {
+  
+}
+footer .wrap .fnb span a {
+  display: block;
+}
+footer .wrap .fnb span a strong {
+  font-size: 30px;
+}
+footer .wrap .fnb ul {
+  
+}
+footer .wrap .fnb ul li {
+  
+}
+footer .wrap .fnb ul li a {
+  
+}
+footer .wrap .fnb select {
+  
+}
+footer .wrap .fnb select option {
+  
+}
+footer .wrap .fnb > a {
+  position: absolute;
+  right: calc((100% - 1520px) / 2);
+  bottom: 10px;
+  font-size: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/blog_btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .wrap .pnb {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .wrap .pnb li {
+  
+}
+footer .wrap .pnb li a {
+  color: white;
+  font-size: 30px;
+}
+footer .wrap ul.pnb li:first-child a{
+  padding-right: 5px;
+}
+footer .wrap ul.pnb li a:hover{
+  font-weight: bold;
+}
+footer .wrap address {
+  width: 100%;
+  font-size: 15px;
+  grid-column: 2;
+  grid-row: 5;
+}
+footer .wrap p {
+  font-size: 15px;
+  grid-column: 2;
+  grid-row: 6;
+}

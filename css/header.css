@@ -1,0 +1,106 @@
+header {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+header .wrap {
+  height: 100px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 30px;
+}
+header .wrap h1 {
+  
+}
+header .wrap h1 a {
+  font-size: 0;
+  display: block;
+  width: 188px;
+  height: 33px;
+  background-image: url(../img/logo_w.png);
+}
+header .wrap ul.gnb {
+  
+  padding-left: 100px;
+}
+header .wrap ul.gnb li {
+  
+}
+header .wrap ul.gnb li a {
+  display: block;
+  line-height: 100px;
+  padding: 0 50px;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
+header .wrap .sublist {
+  display: none;
+}
+header .wrap .sublist div {
+  
+}
+header .wrap .sublist div h2 {
+  
+}
+header .wrap .sublist div ul.useguide {
+  
+}
+header .wrap .sublist div ul.useguide li {
+  
+}
+header .wrap .sublist div ul.useguide li a {
+  
+}
+header .wrap span.lang {
+}
+header .wrap span.lang a {
+  font-size: 13px;
+  color: white;
+}
+header .wrap span.lang a::before{
+  content: "";
+  display: inline-block;
+  background: url(../img/lang.svg);
+  width: 12px;
+  height: 12px;
+  vertical-align: -2px;
+  margin-right: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .wrap span.lang a::after{
+    content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/drop.svg);
+  background-size: contain;
+  vertical-align: -4px;
+    background-repeat: no-repeat;
+}
+header .wrap span.lang a:nth-child(2){
+  display: none;
+}
+header .wrap >a{
+
+  justify-self: end;
+}
+header .wrap a span{
+  
+}
+
+
+
+
+
+
+
+
+
+
+

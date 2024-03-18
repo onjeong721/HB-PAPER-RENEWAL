@@ -1,0 +1,113 @@
+section#products {
+  background-color: white;
+}
+section#products .wrap {  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  column-gap: 10%;
+}
+section#products .wrap .column{ 
+  gap: 30px;
+}
+section#products .wrap  .column h3 {
+}
+section#products .wrap  .column h4 {
+  margin: -20px 0 10px 0;
+}
+section#products .wrap  .column ul {  
+  display: flex;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+section#products .wrap  .column ul li {
+  
+}
+section#products .wrap .column  ul li a {
+  font-weight: bold;
+  transition: 0.5s;
+  font-size: 17px;
+}
+section#products .wrap  .column ul li p {  
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  color: black;
+}
+section#products .wrap .column ul li a::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/arrowrightdown.png);
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  vertical-align: -3px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  margin-left: 2px;
+}
+section#products .wrap .column ul li:hover a::after{
+  opacity: 1;
+}
+section#products .wrap .column ul li:first-child{
+  padding: 0 10px 0 0;
+}
+section#products .wrap .column  > a { 
+
+  padding-top: 150px;
+}
+section#products .wrap  .column > a::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/plus.png);
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  vertical-align: -3px;
+  margin-left: 10px;
+}
+section#products .wrap .pro-list  {
+  overflow: hidden;
+}
+section#products .wrap .pro-list  ul {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+section#products .wrap .pro-list:hover{
+  cursor: url(../img/dragto.png) 20 30, auto;
+}
+section#products .wrap .pro-list  ul li {  
+  text-align: center;
+}
+section#products .wrap .pro-list  ul li:nth-child(1){
+
+} 
+section#products .wrap .pro-list  ul li:nth-child(2){
+
+} 
+section#products .wrap .pro-list  ul li:nth-child(3){
+
+} 
+section#products .wrap .pro-list  ul:nth-child(4) li{
+  
+} 
+section#products .wrap .pro-list  ul li a {
+  
+}
+section#products .wrap .pro-list  ul li a img{
+  width: 500px;
+  height: 500px;
+  transition: 0.5s;
+}
+section#products .wrap .pro-list ul li:hover a img{
+  cursor: url(../img/dragto.png) 20 30, auto;
+}
+section#products .wrap .pro-list  ul li a p{
+  font-size: 17px;
+}
+section#products .wrap .pro-list  ul li a span{
+  color: #666;
+}
